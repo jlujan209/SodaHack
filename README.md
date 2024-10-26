@@ -4,7 +4,10 @@
 
 <table>
     <tr>
-        <td>Password Manager</td>
+        <td>Browser</td>
+    </tr>
+    <tr>
+        <td>Blockchain Encrypted Password Manager</td>
     </tr>
     <tr>
         <td>VPN</td>
