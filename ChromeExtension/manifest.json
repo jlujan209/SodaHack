@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Otter",
+    "version": "1.0",
+    "description": "Safe Browsing for Everyone",
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "notifications"
+    ],
+    "externally_connectable": {
+        "matches": ["*://*/*"]
+    },
+    "host_permissions": ["<all_urls>"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "./icon/file.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["confirm.html"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
