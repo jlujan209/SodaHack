@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            border: 2px solid #e74c3c;
+        }
+
+        h2 {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin: 0 0 15px;
+            font-weight: bold;
+        }
+
+        #riskMessage {
+            font-size: 1.1em;
+            color: #333333;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px; 
+        }
+
+        button {
+            font-size: 1em;
+            padding: 12px 25px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%; 
+            max-width: 150px; 
+        }
+
+        #proceedBtn {
+            background-color: #c0392b;
+            color: #ffffff;
+        }
+
+        #proceedBtn:hover {
+            background-color: #e74c3c;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Warning: Suspicious Website</h2>
+        <p id="riskMessage">This website has been flagged as potentially risky. Please proceed with caution.</p>
+        
+        <div class="button-group">
+            <button id="proceedBtn">Proceed</button>
+        </div>
+    </div>
+    <script src="confirm.js"></script>
+</body>
+</html>
